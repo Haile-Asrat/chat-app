@@ -13,5 +13,5 @@ export const loginSchema = z.object({
 
 export const messageSchema = z.object({
   text: z.string().min(1, 'Message cannot be empty'),
-  receiverId: z.string().min(1, 'Receiver ID is required'),
+  receiverId: z.number().int().positive('Receiver ID must be a positive integer'),
 })
