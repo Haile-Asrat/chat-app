@@ -154,7 +154,7 @@ export default function ChatPage() {
                 }`}
               >
                 <div className="font-medium">{u.name}</div>
-                <div className="text-sm text-gray-500">{u.email}</div>
+                <div className="text-sm text-blue-500">{u.email}</div>
               </button>
             ))}
           </div>
@@ -177,7 +177,7 @@ export default function ChatPage() {
             </>
           ) : (
             <div className="flex-1 flex items-center justify-center">
-              <div className="text-center text-gray-500">
+              <div className="text-center text-blue-500">
                 <div className="text-lg mb-2">Select a user to start chatting</div>
                 <div className="text-sm">Choose someone from the list on the left</div>
               </div>
