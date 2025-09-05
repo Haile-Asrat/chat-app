@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
-import Header from '@/components/Header'
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import Header from "@/components/Header";
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     // Check if user is logged in
-    const token = localStorage.getItem('token')
-    const user = localStorage.getItem('user')
+    const token = localStorage.getItem("token");
+    const user = localStorage.getItem("user");
 
     if (token && user) {
-      router.push('/chat')
+      router.push("/chat");
     } else {
-      router.push('/login')
+      router.push("/login");
     }
-  }, [router])
+  }, [router]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -26,5 +26,5 @@ export default function Home() {
         <div className="text-lg">Redirecting...</div>
       </div>
     </div>
-  )
+  );
 }
