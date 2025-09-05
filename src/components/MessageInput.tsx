@@ -26,7 +26,7 @@ export default function MessageInput({ onSendMessage, disabled }: MessageInputPr
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Type a message..."
-          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500"
           disabled={disabled}
         />
         <button
