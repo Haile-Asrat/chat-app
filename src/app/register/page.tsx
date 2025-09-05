@@ -62,7 +62,7 @@ export default function RegisterPage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
+        <h2 className="text-2xl font-bold text-center mb-6 text-gray-900">Register</h2>
         
         {error && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">

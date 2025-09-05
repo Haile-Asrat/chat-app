@@ -142,7 +142,7 @@ export default function ChatPage() {
         {/* Users List */}
         <div className="w-1/3 bg-white border-r border-gray-200 flex flex-col">
           <div className="p-4 border-b border-gray-200">
-            <h2 className="text-lg font-semibold">Users</h2>
+            <h2 className="text-lg font-semibold text-gray-900">Users</h2>
           </div>
           <div className="flex-1 overflow-y-auto">
             {users.map((u) => (
@@ -153,7 +153,7 @@ export default function ChatPage() {
                   selectedUserId === u.id ? 'bg-blue-50 border-blue-200' : ''
                 }`}
               >
-                <div className="font-medium">{u.name}</div>
+                <div className="font-medium text-gray-900">{u.name}</div>
                 <div className="text-sm text-blue-500">{u.email}</div>
               </button>
             ))}
@@ -165,7 +165,7 @@ export default function ChatPage() {
           {selectedUserId ? (
             <>
               <div className="p-4 border-b border-gray-200 bg-white">
-                <h3 className="font-semibold">
+                <h3 className="font-semibold text-gray-900">
                   {users.find(u => u.id === selectedUserId)?.name}
                 </h3>
               </div>
