@@ -140,3 +140,5 @@ src/
 ## License
 
 MIT License
+
+A demo video is included in the repository
